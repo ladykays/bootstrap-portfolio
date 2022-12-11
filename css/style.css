@@ -12,6 +12,7 @@ section h2 {
 :root {
   --black: #080808;
   --beige: #f5f5dc;
+  --pink: #ff004c;
 }
 section {
   padding-bottom: 7rem;
@@ -47,6 +48,7 @@ section {
 .skills-section {
   background-color:#f8f5bd
 }
+
 .skills-align-center{
   text-align: center;
 }
@@ -56,11 +58,23 @@ section {
 }
 .fa-5x {
   padding: 2rem;
-  color: rgb(255, 0, 76);
+  color: var(--pink);
 }
 
 
 /* Contact section styles */
-
+.text-align-center {
+  text-align: center;
+}
+.email-btn {
+  border-radius: 2rem;
+  background-color: #ff004c;
+  padding: 0.5rem 2rem;
+  border: none;
+}
+.email-btn:hover {
+  background-color: rgba(76, 81, 85, 0.9);
+  color: var(--beige);
+}
 
 /* Footer section styles */
