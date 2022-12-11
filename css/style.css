@@ -1,0 +1,32 @@
+/* Global styles */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation bar styles */
+
+
+
+/* Hero section styles */
+.jumbotron {
+  background: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  padding-top: 80px;
+}
+
+
+/* Work section styles */
+.work-section {
+  background-color: black;
+  margin-top: 0;
+}
+
+
+/* Contact section styles */
+
+
+/* Footer section styles */
