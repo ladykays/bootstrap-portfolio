@@ -9,15 +9,16 @@ section h2 {
   text-align: center;
 }
 :root {
-  --black: #0e0d22;
-  --beige: #f5f5dc;
-  --pink: #ff004c;
-  --green: #83956a;
-  --info: #55B4D3;
-  --primary: #D37455;
-  color: #008000;
+  --lightRed: #ff645780;
+  --white: #ffffff;
+  --black: #000000;
+  --lightPurple: #3042ff;
+  --rose: #ff6457;
+  --navy:#050f57 ;
+  --gray: #acacac;
 }
 a {
+  text-decoration: none;
   transition: all .35;
 }
 .work-section,
@@ -35,9 +36,10 @@ a {
   transition: all 0.5s;
 }
 .navbar .navbar-nav .nav-link:hover {
-background-color:rgba(255, 100, 87, 0.5);
-color: #ffffff;
+background-color: var(--lightRed);
+color: var(--white);
 }
+
 /* Hero section styles */
 .jumbotron {
   background: url(../images/03-hero-bg.jpg);
@@ -47,32 +49,29 @@ color: #ffffff;
   padding-top: 80px;
 }
 .photo {
-  border: 2px solid black;
+  border: 2px solid var(--black);
   border-radius: 2em;
 }
 
-
 /* Work section styles */
 .work-section {
-  background-color: #3042ff;
+  background-color: var(--lightPurple);
   background-image: linear-gradient(to bottom, #3042ff , #6457ff, #917fff);
   margin-top: 0;
   padding-bottom: 2em;
 }
 .work-section h2 {
-  color: #ffffff;
+  color: var(--white);
 }
 .project:hover
 {
   transform: scale(1.1);
 }
 
-
 /* Skills section styles */
 .skills-section {
-  background-color:#ffffff
+  background-color: var(--white);
 }
-
 .skills-align-center{
   text-align: center;
 }
@@ -82,36 +81,27 @@ color: #ffffff;
 }
 .fa-5x {
   padding: 2rem;
-  color:#ff6457;
+  color: var(--rose);
 }
-
 
 /* Contact section styles */
 .contact-section{
-  background-color:#050f57 ;
+  background-color: var(--navy) ;
   background-image: linear-gradient(to bottom, #050f57 , #231b64, rgb(66, 56, 119), #8078a2);
-  color: #ffffff;
+  color: var(--white);
 }
-/*.contact-title{
-  padding-top: 3rem;
-}
-.contact, .about {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}*/
 .text-align-center {
   text-align: center;
 }
 .text-align-left {
   text-align: left;
 }
-
 .email-btn {
   border-radius: 2rem;
-  background-color: #ff6457;
+  background-color: var(--rose);
   padding: 0.5rem 2rem;
   border: none;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   margin: 1rem 0;
 }
 .email-btn:hover {
@@ -127,14 +117,14 @@ color: #ffffff;
 }
 .footer-section .social-icon {
   font-size: 2em;
-  color:#ff6457;
+  color: var(--rose);
 }
 .footer-section .social-icon:hover {
-  color: #3042ff;
+  color: var(--lightPurple);
 }
 .copy-text {
   font-size: 14px;
-  color: #acacac;
+  color: var(--gray);
 }
 
 /*Media Queries*/
