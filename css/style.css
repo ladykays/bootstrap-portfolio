@@ -14,7 +14,7 @@ section h2 {
   --black: #000000;
   --lightPurple: #3042ff;
   --rose: #ff6457;
-  --navy:#050f57 ;
+  --navy: #050f57;
   --gray: #acacac;
 }
 a {
@@ -30,14 +30,14 @@ a {
 
 /* Navigation bar styles */
 .navbar .navbar-nav .nav-link {
-  color:#050f57;
+  color: #050f57;
   font-size: 1.2em;
   padding: 0.6em;
   transition: all 0.5s;
 }
 .navbar .navbar-nav .nav-link:hover {
-background-color: var(--lightRed);
-color: var(--white);
+  background-color: var(--lightRed);
+  color: var(--white);
 }
 
 /* Hero section styles */
@@ -56,15 +56,14 @@ color: var(--white);
 /* Work section styles */
 .work-section {
   background-color: var(--lightPurple);
-  background-image: linear-gradient(to bottom, #3042ff , #6457ff, #917fff);
+  background-image: linear-gradient(to bottom, #3042ff, #6457ff, #917fff);
   margin-top: 0;
   padding-bottom: 2em;
 }
 .work-section h2 {
   color: var(--white);
 }
-.project:hover
-{
+.project:hover {
   transform: scale(1.1);
 }
 
@@ -72,12 +71,12 @@ color: var(--white);
 .skills-section {
   background-color: var(--white);
 }
-.skills-align-center{
+.skills-align-center {
   text-align: center;
 }
 .skill-card {
- background-color: transparent;
- border: none;
+  background-color: transparent;
+  border: none;
 }
 .fa-5x {
   padding: 2rem;
@@ -85,9 +84,15 @@ color: var(--white);
 }
 
 /* Contact section styles */
-.contact-section{
-  background-color: var(--navy) ;
-  background-image: linear-gradient(to bottom, #050f57 , #231b64, rgb(66, 56, 119), #8078a2);
+.contact-section {
+  background-color: var(--navy);
+  background-image: linear-gradient(
+    to bottom,
+    #050f57,
+    #231b64,
+    rgb(66, 56, 119),
+    #8078a2
+  );
   color: var(--white);
 }
 .text-align-center {
@@ -112,8 +117,7 @@ color: var(--white);
 
 /* Footer section styles */
 .footer-section {
-
-  color:rgb(225, 231, 236);
+  color: rgb(225, 231, 236);
 }
 .footer-section .social-icon {
   font-size: 2em;
@@ -128,26 +132,26 @@ color: var(--white);
 }
 
 /*Media Queries*/
-@media only screen and (min-width:0px) and (max-width: 576px) {
-.email-me-hide {
-  display: none;
-}
-#skills{
-  font-size: 10px;
-}
-h5.card-title {
-  font-size: 10px;
-}
-section h2 {
-  padding-top: 2rem;
-}
-}
-
-@media only screen and (max-width:768px) {
+@media only screen and (min-width: 0px) and (max-width: 576px) {
   .email-me-hide {
     display: none;
   }
-  #skills{
+  #skills {
+    font-size: 10px;
+  }
+  h5.card-title {
+    font-size: 10px;
+  }
+  section h2 {
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .email-me-hide {
+    display: none;
+  }
+  #skills {
     font-size: 14px;
   }
   h5.card-title {
