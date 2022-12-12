@@ -58,6 +58,12 @@ color: #ffffff;
 .work-section h2 {
   color: #ffffff;
 }
+.project:hover
+{
+  transform: scale(1.1);
+}
+
+
 /* Skills section styles */
 .skills-section {
   background-color:#ffffff
@@ -102,9 +108,9 @@ color: #ffffff;
   margin: 1rem 0;
 }
 .email-btn:hover {
-  background-color: rgba(199, 192, 231, 0.3);
-  color: #ffffff;
+  color: #050f57;
   border: 2px solid #fff;
+  box-shadow: 20px 20px 50px 10px #c7c0e7 inset;
 }
 
 /* Footer section styles */
@@ -125,8 +131,28 @@ color: #ffffff;
 }
 
 /*Media Queries*/
-@media only screen and (min-width:0px) and (max-width: 768px) {
+@media only screen and (min-width:0px) and (max-width: 576px) {
+.email-me-hide {
+  display: none;
+}
+#skills{
+  font-size: 10px;
+}
+h5.card-title {
+  font-size: 10px;
+}
+section h2 {
+  padding-top: 4rem;
+}
+}
 
+@media only screen and (max-width:768px) {
+  #skills{
+    font-size: 14px;
+  }
+  h5.card-title {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
