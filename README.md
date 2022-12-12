@@ -16,7 +16,7 @@ https://ladykays.github.io/bootstrap-portfolio/
 
 ## Screenshot
 
-![Screenshot](assets/images/screenshot.png)
+![Screenshot](/images/screenshot.png)
 
 ## Credits
 
