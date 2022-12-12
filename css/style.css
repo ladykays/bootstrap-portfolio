@@ -10,9 +10,13 @@ section h2 {
   text-align: center;
 }
 :root {
-  --black: #080808;
+  --black: #0e0d22;
   --beige: #f5f5dc;
   --pink: #ff004c;
+  --green: #83956a;
+  --info: #55B4D3;
+  --primary: #D37455;
+  color: #008000;
 }
 a {
   transition: all .35;
@@ -21,35 +25,42 @@ section {
   padding-bottom: 7rem;
 }
 /* Navigation bar styles */
-
-
-
+.navbar .navbar-nav .nav-link {
+  color:#050f57;
+  font-size: 1.2em;
+  padding: 0.6em;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover {
+background-color:rgba(255, 100, 87, 0.5);
+color: #ffffff;
+}
 /* Hero section styles */
 .jumbotron {
-  background: url(../images/02-hero-bg.jpg);
+  background: url(../images/03-hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 0;
   padding-top: 80px;
 }
+.photo {
+  border: 2px solid black;
+  border-radius: 2em;
+}
 
 
 /* Work section styles */
 .work-section {
-  background-color: var(--black);
+  background-color: #3042ff;
+  background-image: linear-gradient(to bottom, #3042ff , #6457ff, #917fff);
   margin-top: 0;
 }
 .work-section h2 {
-  color: var(--beige);
+  color: #ffffff;
 }
-.work-section .card-body {
-  background-color: var(--beige);
-}
-
-
 /* Skills section styles */
 .skills-section {
-  background-color:#f8f5bd
+  background-color:#ffffff
 }
 
 .skills-align-center{
@@ -61,38 +72,71 @@ section {
 }
 .fa-5x {
   padding: 2rem;
-  color: var(--pink);
+  color:#ff6457;
 }
 
 
 /* Contact section styles */
+.contact-section{
+  background-color:#050f57 ;
+  background-image: linear-gradient(to bottom, #050f57 , #231b64, rgb(66, 56, 119), #8078a2);
+  color: #ffffff;
+}
+.contact-title{
+  padding-top: 3rem;
+}
+.contact, .about {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .text-align-center {
   text-align: center;
 }
+
 .email-btn {
   border-radius: 2rem;
-  background-color: #ff004c;
+  background-color: #ff6457;
   padding: 0.5rem 2rem;
   border: none;
+  border: 2px solid #fff;
+  margin: 1rem 0;
 }
 .email-btn:hover {
-  background-color: rgba(76, 81, 85, 0.9);
-  color: var(--beige);
+  background-color: rgba(199, 192, 231, 0.3);
+  color: #ffffff;
+  border: 2px solid #fff;
 }
 
 /* Footer section styles */
 .footer-section {
-  background-color:#4e4e4e;
+
   color:rgb(225, 231, 236);
 }
 .footer-section .social-icon {
-  font-size: 2.5em;
-  color:white;
+  font-size: 2em;
+  color:#ff6457;
 }
 .footer-section .social-icon:hover {
-  color: var(--pink);
+  color: #3042ff;
 }
 .copy-text {
   font-size: 14px;
   color: #acacac;
+}
+
+/*Media Queries*/
+@media only screen and (min-width:0px) and (max-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0.7em;
+  }
+  .navbar .navbar-brand {
+    padding: 0 0.8em;
+  }
 }
